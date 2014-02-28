@@ -2,6 +2,11 @@ Revision history for Perl extension Mock-Person-JP
 
 {{$NEXT}}
 
+0.04 2014-02-28T17:29:31Z
+
+    - Added male names (Thanks to Ben Bullock)
+    - Added license information
+
 0.03 2014-02-28T12:56:43Z
 
     - Improve share/female_mei.tsv (some names had malformed characters)
