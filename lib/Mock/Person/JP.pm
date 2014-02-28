@@ -17,8 +17,8 @@ sub new
     my $self = bless {}, $class;
 
     $self->{sei}         = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'sei.tsv') );
+    $self->{mei}{male}   = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei_male.tsv') );
     $self->{mei}{female} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei_female.tsv') );
-    $self->{mei}{male} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei_male.tsv') );
 
     return $self;
 }
@@ -257,6 +257,10 @@ See L<http://www.edrdg.org/edrdg/licence.html> for the full licence.
 =item 戸籍法施行規則第60条
 
 =back
+
+=head1 CONTRIBUTORS
+
+Ben Bullock (BKB)
 
 =head1 AUTHOR
 

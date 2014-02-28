@@ -175,6 +175,10 @@ See [Mock::Person::JP::Person::Name](https://metacpan.org/pod/Mock::Person::JP::
 - [Mock::Person](https://metacpan.org/pod/Mock::Person)
 - 戸籍法施行規則第60条
 
+# CONTRIBUTORS
+
+Ben Bullock (BKB)
+
 # AUTHOR
 
 pawa <pawa@pawafuru.com>
