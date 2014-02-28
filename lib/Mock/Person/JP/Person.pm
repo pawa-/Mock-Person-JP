@@ -8,31 +8,10 @@ sub new
 {
     my ($class, $arg) = @_;
 
-    my $self = bless $arg, $class;
-    $self->{name} = $self->_rand_name;
-
-    return $self;
+    return bless $arg, $class;
 }
 
 sub name { Mock::Person::JP::Person::Name->new(shift->{name}); }
-
-sub _rand_name
-{
-    my ($self) = @_;
-
-    my $sei = $self->{sei}->next;
-    my $mei = $self->{mei}->next;
-
-    # Faster than Encode::decode_utf8
-    utf8::decode($sei);
-    utf8::decode($mei);
-
-    my %name;
-    ($name{sei_yomi}, $name{sei}) = split(/\t/, $sei);
-    ($name{mei_yomi}, $name{mei}) = split(/\t/, $mei);
-
-    return \%name;
-}
 
 1;
 

@@ -16,8 +16,8 @@ sub new
 
     my $self = bless {}, $class;
 
-    $self->{sei} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'sei.tsv') );
-    $self->{mei} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei.tsv') );
+    $self->{sei}         = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'sei.tsv') );
+    $self->{mei}{female} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei_female.tsv') );
 
     return $self;
 }
@@ -27,6 +27,8 @@ sub create_person
     my $self = shift;
 
     my %arg = (ref $_[0] eq 'HASH') ? %{$_[0]} : @_;
+
+    Carp::croak('sex option required') unless exists $arg{sex};
 
     for my $key (keys %arg)
     {
@@ -38,7 +40,27 @@ sub create_person
         else { Carp::croak "Unknown option: '$key'";  }
     }
 
-    return Mock::Person::JP::Person->new({ option => \%arg, sei => $self->{sei}, mei => $self->{mei} });
+    $arg{name} = $self->_rand_name($arg{sex});
+
+    return Mock::Person::JP::Person->new(\%arg);
+}
+
+sub _rand_name
+{
+    my ($self, $sex) = @_;
+
+    my $sei = $self->{sei}->next;
+    my $mei = $self->{mei}{$sex}->next;
+
+    # Faster than Encode::decode_utf8 and no need to validate the string
+    utf8::decode($sei);
+    utf8::decode($mei);
+
+    my %name;
+    ($name{sei_yomi}, $name{sei}) = split(/\t/, $sei);
+    ($name{mei_yomi}, $name{mei}) = split(/\t/, $mei);
+
+    return \%name;
 }
 
 1;
