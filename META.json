@@ -1,7 +1,7 @@
 {
    "abstract" : "Generate random sets of Japanese names",
    "author" : [
-      "pawa <pawa@pawafuru.com>"
+      "pawa."
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380",
@@ -68,5 +68,8 @@
          "web" : "https://github.com/pawa-/Mock-Person-JP"
       }
    },
-   "version" : "0.02"
+   "version" : "0.02",
+   "x_contributors" : [
+      "pawa <pawa@pawafuru.com>"
+   ]
 }
