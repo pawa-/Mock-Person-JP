@@ -248,13 +248,15 @@ See L<http://www.edrdg.org/edrdg/licence.html> for the full licence.
 
 Copyright (C) pawa.
 
-You can redistribute these files and/or modify it under the same terms as Perl itself.
+You can redistribute these files and/or modify these files under the same terms as Perl itself.
 
 =item of share/mei_male.tsv
 
 Copyright (C) pawa.
 
 You can redistribute it and/or modify it under the same licence of Enamdict.
+
+This file contains almost all the male given names of Enamdict.
 
 =back
 

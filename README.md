@@ -169,6 +169,20 @@ See [Mock::Person::JP::Person::Name](https://metacpan.org/pod/Mock::Person::JP::
 
     See [http://www.edrdg.org/edrdg/licence.html](http://www.edrdg.org/edrdg/licence.html) for the full licence.
 
+- of share/sei.tsv, share/mei\_female.tsv
+
+    Copyright (C) pawa.
+
+    You can redistribute these files and/or modify these files under the same terms as Perl itself.
+
+- of share/mei\_male.tsv
+
+    Copyright (C) pawa.
+
+    You can redistribute it and/or modify it under the same licence of Enamdict.
+
+    This file contains almost all the male given names of Enamdict.
+
 # SEE ALSO
 
 - [Mock::Person](https://metacpan.org/pod/Mock::Person)
