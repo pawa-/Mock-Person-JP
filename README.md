@@ -162,6 +162,14 @@ See [Mock::Person::JP::Person::Name](https://metacpan.org/pod/Mock::Person::JP::
         下記の方をのぞき 金銭を伴わない転載・改編は ご自由にどうぞ
         ﾊﾟｿｺﾝ通信等にてｼｪｱｳｴｱを登録されている方はそのｼｪｱｳｴｱの使用権と引き替えに個人的使用に限り許諾いたします
 
+- of Enamdict
+
+    Copyright is held by James William BREEN and The Electronic Dictionary Research and Development Group.
+
+    The dictionary files are made available under a Creative Commons Attribution-ShareAlike Licence (V3.0).
+
+    See [http://www.edrdg.org/edrdg/licence.html](http://www.edrdg.org/edrdg/licence.html) for the full licence.
+
 # SEE ALSO
 
 - [Mock::Person](https://metacpan.org/pod/Mock::Person)
