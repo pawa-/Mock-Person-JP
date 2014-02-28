@@ -36,7 +36,6 @@ sub create_person
         if ($key eq 'sex')
         {
             Carp::croak("sex option must be 'male' or 'female'") if $arg{$key} ne 'male' && $arg{$key} ne 'female';
-#            Carp::croak("'male' option not implemented yet!")    if $arg{$key} eq 'male';
         }
         else { Carp::croak "Unknown option: '$key'";  }
     }
@@ -114,8 +113,7 @@ Creates a new Mock::Person::JP instance.
 
 =head2 create_person(sex => 'male' or 'female')
 
-Creates a new person with a random name. Sex option can take 'male' or 'female',
-but 'male' does not work yet because of lack of data.
+Creates a new person with a random name. Sex option can take 'male' or 'female'.
 
 =head2 name()
 

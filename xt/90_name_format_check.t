@@ -22,6 +22,21 @@ subtest 'mei_female.tsv' => sub {
     }
 };
 
+
+subtest 'mei_male.tsv' => sub {
+    open(my $fh, '<', 'share/mei_male.tsv') or die $!;
+    chomp(my @lines = <$fh>);
+    close($fh);
+
+    for my $line (@lines)
+    {
+        my ($yomi, $mei) = split(/\t/, $line);
+
+        like($yomi, qr/^[\p{InHiragana}\x{30FC}ゐゑヰヱ]+$/, 'yomi');
+        like($mei,  qr/^[\p{Han}\p{InHiragana}\p{InKatakana}\x{30FC}〆]+$/, 'mei');
+    }
+};
+
 subtest 'sei.tsv' => sub {
     open(my $fh, '<', 'share/sei.tsv') or die $!;
     chomp(my @lines = <$fh>);
