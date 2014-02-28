@@ -31,7 +31,7 @@ Mock::Person::JP - Generate random sets of Japanese names
 # DESCRIPTION
 
 Mock::Person::JP generates random sets of Japanese names
-by using 123,613 first names and 23,022 last names.
+by using 123,583 first names and 23,022 last names.
 
 # METHODS
 
