@@ -244,6 +244,18 @@ The dictionary files are made available under a Creative Commons Attribution-Sha
 
 See L<http://www.edrdg.org/edrdg/licence.html> for the full licence.
 
+=item of share/sei.tsv, share/mei_female.tsv
+
+Copyright (C) pawa.
+
+You can redistribute these files and/or modify it under the same terms as Perl itself.
+
+=item of share/mei_male.tsv
+
+Copyright (C) pawa.
+
+You can redistribute it and/or modify it under the same licence of Enamdict.
+
 =back
 
 =head1 SEE ALSO
