@@ -2,6 +2,10 @@ Revision history for Perl extension Mock-Person-JP
 
 {{$NEXT}}
 
+0.02 2014-02-28T08:37:46Z
+
+    - sex option is essential
+
 0.01 2014-02-28T04:29:35Z
 
     - original version
