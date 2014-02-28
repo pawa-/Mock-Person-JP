@@ -18,6 +18,7 @@ sub new
 
     $self->{sei}         = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'sei.tsv') );
     $self->{mei}{female} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei_female.tsv') );
+    $self->{mei}{male} = File::RandomLine->new( File::ShareDir::dist_file('Mock-Person-JP', 'mei_male.tsv') );
 
     return $self;
 }
@@ -35,7 +36,7 @@ sub create_person
         if ($key eq 'sex')
         {
             Carp::croak("sex option must be 'male' or 'female'") if $arg{$key} ne 'male' && $arg{$key} ne 'female';
-            Carp::croak("'male' option not implemented yet!")    if $arg{$key} eq 'male';
+#            Carp::croak("'male' option not implemented yet!")    if $arg{$key} eq 'male';
         }
         else { Carp::croak "Unknown option: '$key'";  }
     }
@@ -236,6 +237,14 @@ Copyright (C) 憩舞華.
 
     下記の方をのぞき 金銭を伴わない転載・改編は ご自由にどうぞ
     ﾊﾟｿｺﾝ通信等にてｼｪｱｳｴｱを登録されている方はそのｼｪｱｳｴｱの使用権と引き替えに個人的使用に限り許諾いたします
+
+=item of Enamdict
+
+Copyright is held by James William BREEN and The Electronic Dictionary Research and Development Group.
+
+The dictionary files are made available under a Creative Commons Attribution-ShareAlike Licence (V3.0).
+
+See L<http://www.edrdg.org/edrdg/licence.html> for the full licence.
 
 =back
 
