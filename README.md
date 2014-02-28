@@ -41,8 +41,7 @@ Creates a new Mock::Person::JP instance.
 
 ## create\_person(sex => 'male' or 'female')
 
-Creates a new person with a random name. Sex option can take 'male' or 'female',
-but 'male' does not work yet because of lack of data.
+Creates a new person with a random name. Sex option can take 'male' or 'female'.
 
 ## name()
 
