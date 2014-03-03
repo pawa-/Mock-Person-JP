@@ -8,7 +8,7 @@ use File::ShareDir   ();
 use File::RandomLine ();
 use Mock::Person::JP::Person ();
 
-our $VERSION = "0.04";
+our $VERSION = "0.05";
 
 sub new
 {
