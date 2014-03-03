@@ -254,7 +254,7 @@ You can redistribute these files and/or modify these files under the same terms 
 
 Copyright (C) pawa.
 
-You can redistribute it and/or modify it under the same licence of Enamdict.
+You can redistribute it and/or modify it under the same licence as Enamdict itself.
 
 This file contains almost all the male given names of Enamdict.
 
@@ -266,7 +266,9 @@ This file contains almost all the male given names of Enamdict.
 
 =item L<Mock::Person>
 
-=item 戸籍法施行規則第60条
+=item 戸籍法 第50条
+
+=item 戸籍法施行規則 第60条
 
 =back
 

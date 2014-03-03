@@ -179,14 +179,15 @@ See [Mock::Person::JP::Person::Name](https://metacpan.org/pod/Mock::Person::JP::
 
     Copyright (C) pawa.
 
-    You can redistribute it and/or modify it under the same licence of Enamdict.
+    You can redistribute it and/or modify it under the same licence as Enamdict itself.
 
     This file contains almost all the male given names of Enamdict.
 
 # SEE ALSO
 
 - [Mock::Person](https://metacpan.org/pod/Mock::Person)
-- 戸籍法施行規則第60条
+- 戸籍法 第50条
+- 戸籍法施行規則 第60条
 
 # CONTRIBUTORS
 
