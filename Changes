@@ -2,6 +2,10 @@ Revision history for Perl extension Mock-Person-JP
 
 {{$NEXT}}
 
+0.06 2014-03-21T02:20:51Z
+
+    - Improved tests, name list and documentation
+
 0.05 2014-03-03T04:58:18Z
 
     - Improved documentation
