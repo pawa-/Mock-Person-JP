@@ -103,7 +103,7 @@ Mock::Person::JP - Generate random sets of Japanese names
 =head1 DESCRIPTION
 
 Mock::Person::JP generates random sets of Japanese names
-by using 142,611 first names and 23,022 last names.
+by using 142,610 first names and 23,021 last names.
 
 =head1 METHODS
 
@@ -269,6 +269,8 @@ This file contains almost all the male given names of Enamdict.
 =item 戸籍法 第50条
 
 =item 戸籍法施行規則 第60条
+
+=item L<Lingua::JA::KanjiTable>
 
 =back
 

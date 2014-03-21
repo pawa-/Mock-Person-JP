@@ -31,7 +31,7 @@ Mock::Person::JP - Generate random sets of Japanese names
 # DESCRIPTION
 
 Mock::Person::JP generates random sets of Japanese names
-by using 142,611 first names and 23,022 last names.
+by using 142,610 first names and 23,021 last names.
 
 # METHODS
 
@@ -188,6 +188,7 @@ See [Mock::Person::JP::Person::Name](https://metacpan.org/pod/Mock::Person::JP::
 - [Mock::Person](https://metacpan.org/pod/Mock::Person)
 - 戸籍法 第50条
 - 戸籍法施行規則 第60条
+- [Lingua::JA::KanjiTable](https://metacpan.org/pod/Lingua::JA::KanjiTable)
 
 # CONTRIBUTORS
 
